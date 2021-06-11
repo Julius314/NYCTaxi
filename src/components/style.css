@@ -1,0 +1,100 @@
+body{
+    margin:0;
+}
+
+#root{
+    display: flex;
+}
+
+.map-control {
+    right: 40vh;
+}
+
+.split-map.map-control-button {
+    display: none;
+}
+
+.heading{
+    color: #1fbad6;
+    font-family: arial;
+    width: 100%;
+    text-align: center;
+    padding: 2vh 0 3vh 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: linear-gradient(180deg, #29323c 60%, #242730d9 100%);
+}
+
+.r{
+    color: #1fbad6;
+    background: #242730d9;
+    padding: 1vh 0;
+    border-top: 1px solid #1fbad680;
+    border-bottom: 1px solid #1fbad680;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+/* tr.poirow:nth-child(even) {background:linear-gradient(to right, rgba(255,0,0,0) 0.01%, #1fbad6 50%, rgba(255,0,0,0) 99.99%);color:#d6531f}
+ */
+tr.poirow:nth-child(even) {background: #1fbad60D;color:#d6531f}
+
+tr.poirow:nth-child(odd) {background: #d6531f0D;color:#1fbad6}
+
+.selector{
+    width:  25%;
+}
+
+#dataviz{
+    width:100%;
+    height:100%;
+    background: #242730d9;
+    padding-top: 2vh;
+    overflow-y: scroll;
+}
+
+.side{
+/*     background: #242730d9;
+ */    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 0 10px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vh;
+}
+
+.axis line{
+    stroke: #898e9b;
+}
+.axis text{
+    fill: #898e9b;
+}
+.axis path{
+    stroke: #898e9b;
+}
+
+.histobar{
+    transition: ease-out 0.5s;
+}
+
+.color0{
+    fill: #1fbad6;
+}
+
+.color1{
+    fill: #d6531f;
+}
+
+.densityLine{
+    fill:#1fbad6;
+    stroke: #898e9b;
+}
+
+.cyan {
+    fill: #1fbad6;
+}
