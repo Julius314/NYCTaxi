@@ -1,8 +1,20 @@
+# NYC TAXI VISUALIZATION 
+
 A visualization framework to be used on the Powerwall to visualize NYC Taxi Data.
 
 by Julius Rauscher & Julia Klein
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [kepler.gl](https://kepler.gl/).
+
+Taxi trip data was taken from [The New York City Taxi and Limousine Commission](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
+
+<img src="report/fig/clusters_day.png" width="100%">
+
+A clustering analysis using DBSCAN was performed to identify areas with high traffic, both for weekdays and weeknights.
+
+<img src="report/fig/cluster16_day.png" width="50%">
+
+Points of Interests have been queried with [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview) around densely clustured areas.
 
 ## Directories
 
